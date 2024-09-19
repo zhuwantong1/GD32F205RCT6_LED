@@ -1,6 +1,6 @@
 Dependencies for Project 'project', Target 'Target 1': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (..\USER\gd32f20x_it.c)(0x66EAA01D)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\GD32F20x_Firmware_Library\CMSIS -I ..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include -I ..\GD32F20x_Firmware_Library\CMSIS\GD\GD32F20x\Include-IC:\Users\admin\AppData\Local\Arm\Packs\GigaDevice\GD32F20x_DFP\2.4.0\Device\Include-D__UVISION_VERSION="540" -DGD32F20X_CL -DUSE_STDPERIPH_DRIVER -DGD32F20X_CL-o .\objects\gd32f20x_it.o --omf_browse .\objects\gd32f20x_it.crf --depend .\objects\gd32f20x_it.d)
+F (..\USER\gd32f20x_it.c)(0x66EACC83)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\GD32F20x_Firmware_Library\CMSIS -I ..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include -I ..\GD32F20x_Firmware_Library\CMSIS\GD\GD32F20x\Include-IC:\Users\admin\AppData\Local\Arm\Packs\GigaDevice\GD32F20x_DFP\2.4.0\Device\Include-D__UVISION_VERSION="540" -DGD32F20X_CL -DUSE_STDPERIPH_DRIVER -DGD32F20X_CL-o .\objects\gd32f20x_it.o --omf_browse .\objects\gd32f20x_it.crf --depend .\objects\gd32f20x_it.d)
 I (..\USER\gd32f20x_it.h)(0x6593DA68)
 I (..\GD32F20x_Firmware_Library\CMSIS\GD\GD32F20x\Include\gd32f20x.h)(0x66EA948D)
 I (..\GD32F20x_Firmware_Library\CMSIS\core_cm3.h)(0x6593DA7D)
@@ -38,8 +38,8 @@ I (..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include\gd32f20x_ti
 I (..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include\gd32f20x_tli.h)(0x6593DA7E)
 I (..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include\gd32f20x_usart.h)(0x6593DA7E)
 I (..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include\gd32f20x_wwdgt.h)(0x6593DA7E)
-I (..\USER\systick.h)(0x6593DA68)
-F (..\USER\main.c)(0x66EAA033)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\GD32F20x_Firmware_Library\CMSIS -I ..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include -I ..\GD32F20x_Firmware_Library\CMSIS\GD\GD32F20x\Include-IC:\Users\admin\AppData\Local\Arm\Packs\GigaDevice\GD32F20x_DFP\2.4.0\Device\Include-D__UVISION_VERSION="540" -DGD32F20X_CL -DUSE_STDPERIPH_DRIVER -DGD32F20X_CL-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\USER\systick.h)(0x66EACC83)
+F (..\USER\main.c)(0x66EB7CE5)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\GD32F20x_Firmware_Library\CMSIS -I ..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include -I ..\GD32F20x_Firmware_Library\CMSIS\GD\GD32F20x\Include-IC:\Users\admin\AppData\Local\Arm\Packs\GigaDevice\GD32F20x_DFP\2.4.0\Device\Include-D__UVISION_VERSION="540" -DGD32F20X_CL -DUSE_STDPERIPH_DRIVER -DGD32F20X_CL-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\GD32F20x_Firmware_Library\CMSIS\GD\GD32F20x\Include\gd32f20x.h)(0x66EA948D)
 I (..\GD32F20x_Firmware_Library\CMSIS\core_cm3.h)(0x6593DA7D)
 I (C:\Users\admin\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
@@ -76,8 +76,8 @@ I (..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include\gd32f20x_ti
 I (..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include\gd32f20x_tli.h)(0x6593DA7E)
 I (..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include\gd32f20x_usart.h)(0x6593DA7E)
 I (..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include\gd32f20x_wwdgt.h)(0x6593DA7E)
-I (..\USER\systick.h)(0x6593DA68)
-F (..\USER\systick.c)(0x66EA96E7)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\GD32F20x_Firmware_Library\CMSIS -I ..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include -I ..\GD32F20x_Firmware_Library\CMSIS\GD\GD32F20x\Include-IC:\Users\admin\AppData\Local\Arm\Packs\GigaDevice\GD32F20x_DFP\2.4.0\Device\Include-D__UVISION_VERSION="540" -DGD32F20X_CL -DUSE_STDPERIPH_DRIVER -DGD32F20X_CL-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
+I (..\USER\systick.h)(0x66EACC83)
+F (..\USER\systick.c)(0x66EB7D05)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\GD32F20x_Firmware_Library\CMSIS -I ..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include -I ..\GD32F20x_Firmware_Library\CMSIS\GD\GD32F20x\Include-IC:\Users\admin\AppData\Local\Arm\Packs\GigaDevice\GD32F20x_DFP\2.4.0\Device\Include-D__UVISION_VERSION="540" -DGD32F20X_CL -DUSE_STDPERIPH_DRIVER -DGD32F20X_CL-o .\objects\systick.o --omf_browse .\objects\systick.crf --depend .\objects\systick.d)
 I (..\GD32F20x_Firmware_Library\CMSIS\GD\GD32F20x\Include\gd32f20x.h)(0x66EA948D)
 I (..\GD32F20x_Firmware_Library\CMSIS\core_cm3.h)(0x6593DA7D)
 I (C:\Users\admin\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
@@ -114,7 +114,7 @@ I (..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include\gd32f20x_ti
 I (..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include\gd32f20x_tli.h)(0x6593DA7E)
 I (..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include\gd32f20x_usart.h)(0x6593DA7E)
 I (..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include\gd32f20x_wwdgt.h)(0x6593DA7E)
-I (..\USER\systick.h)(0x6593DA68)
+I (..\USER\systick.h)(0x66EACC83)
 F (..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Source\gd32f20x_adc.c)(0x6593DA7E)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\USER -I ..\GD32F20x_Firmware_Library\CMSIS -I ..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include -I ..\GD32F20x_Firmware_Library\CMSIS\GD\GD32F20x\Include-IC:\Users\admin\AppData\Local\Arm\Packs\GigaDevice\GD32F20x_DFP\2.4.0\Device\Include-D__UVISION_VERSION="540" -DGD32F20X_CL -DUSE_STDPERIPH_DRIVER -DGD32F20X_CL-o .\objects\gd32f20x_adc.o --omf_browse .\objects\gd32f20x_adc.crf --depend .\objects\gd32f20x_adc.d)
 I (..\GD32F20x_Firmware_Library\GD32F20x_standard_peripheral\Include\gd32f20x_adc.h)(0x6593DA7E)
 I (..\GD32F20x_Firmware_Library\CMSIS\GD\GD32F20x\Include\gd32f20x.h)(0x66EA948D)

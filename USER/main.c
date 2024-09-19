@@ -45,7 +45,7 @@ int main(void)
 {
     /* configure systick */
     systick_config();
-		int t=5000000;
+		//int t=5000000;
     /* enable the LED clock */
     rcu_periph_clock_enable(RCU_GPIOC);
     /* configure LED GPIO port */
@@ -57,11 +57,11 @@ int main(void)
         /* turn off LED */
         gpio_bit_set(GPIOC, GPIO_PIN_14);
         /* insert 500 ms delay */
-        delay_1ms(500);
+        delay_ms(500);
 			/*turn on led*/
 				gpio_bit_reset(GPIOC, GPIO_PIN_14);
 				/* insert 500 ms delay */
-				delay_1ms(500);
+				delay_ms(500);
 			
 			
 //			if(t<10000000&&t>=5000000)

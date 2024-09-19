@@ -39,7 +39,8 @@ OF SUCH DAMAGE.
 #include "systick.h"
 
 volatile static uint32_t delay;
-
+static uint16_t fac_ms=0;							//ms延时倍乘数
+static uint8_t  fac_us=0;							//us延时倍乘数		
 /*!
     \brief      configure systick
     \param[in]  none
@@ -49,13 +50,16 @@ volatile static uint32_t delay;
 void systick_config(void)
 {
     /* setup systick timer for 1000Hz interrupts */
-    if (SysTick_Config(SystemCoreClock / 1000U)){
-        /* capture error */
-        while (1){
-        }
-    }
+//    if (SysTick_Config(SystemCoreClock / 1000U)){
+//        /* capture error */
+//        while (1){
+//        }
+//    }
+		systick_clksource_set(SYSTICK_CLKSOURCE_HCLK_DIV8);
+		fac_us = SystemCoreClock/8000000;
+		fac_ms = fac_us *1000;
     /* configure the systick handler priority */
-    NVIC_SetPriority(SysTick_IRQn, 0x00U);
+//    NVIC_SetPriority(SysTick_IRQn, 0x00U);
 }
 
 /*!
@@ -84,3 +88,25 @@ void delay_decrement(void)
         delay--;
     }
 }
+
+
+/* delay 毫秒延时  轮询方式 */
+
+void delay_ms(uint16_t nms){
+	
+	uint32_t temp;
+	SysTick->LOAD = (uint32_t)nms *fac_ms;//加载时间
+	SysTick->VAL = 0X00;									//清空计数器
+	SysTick->CTRL|=SysTick_CTRL_ENABLE_Msk;//开始倒数
+	do
+	{
+		temp = SysTick->CTRL;
+	
+	}while((temp&0x01)&&!(temp&(1<<16)));//等待时间到达
+	SysTick->CTRL&=~SysTick_CTRL_ENABLE_Msk;//关闭计数器
+	SysTick->VAL = 0X00; //清空计数器
+	
+	
+}
+
+
